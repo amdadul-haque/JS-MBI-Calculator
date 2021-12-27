@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Health Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h2> Here we go! </h2> 
+    <div class="form-control">
+      <h3 class="align-left">Height</h3>
+      <div class="ft-inch">
+        <input type="number" id="height-ft" required >
+        <h4>Feet</h4>
+        <input type="number" id="height-inch" min="0" max="11.75" step="0.25" required>
+        <h4>Inch</h4>
+      </div>
+      <h3 class="align-left">Weight</h3>
+      <div class="ft-inch">
+        <input type="number" id="weight" step="2" required>
+        <h4>Kg</h4>
+      </div>
+      <button class="calculate-btn" id="calculate">Calculate</button>
+    </div>
+    <h2>Your BMI is <strong id="bmi">0.00</strong></h2>
+  </div> 
+   <script src="app.js"></script>
+</body>
+</html>
